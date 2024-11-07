@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+    <classpathentry kind="src" path="src"/>
+    <classpathentry kind="lib" path="C:/Users/pc/progra~1/apache-tomcat-9.0.96-windows-x64/apache-tomcat-9.0.96/lib/servlet-api.jar"/>
+    <classpathentry kind="lib" path="C:/Users/pc/progra~1/mysql-connector-j-9.1.0/mysql-connector-j-9.1.0.jar"/>
+    <classpathentry kind="output" path="bin"/>
+</classpath>
