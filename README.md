@@ -1,7 +1,10 @@
-Quiz Application
+==>***Quiz Application***:
+
 This is a simple Quiz Application developed in Java using Servlets, JSP, and MySQL as the backend database. The application allows users to register, log in, take quizzes, and view their scores.
 
-Table of Contents
+
+==>**Table of Contents**:
+
 Features
 Technologies Used
 Project Structure
@@ -11,17 +14,23 @@ Database Schema
 Future Improvements
 License
 Features
-User Registration and Login: Users can register and log in to access quizzes.
-Quiz Management: Users can take quizzes and submit answers.
-Score Calculation: The application calculates the score based on correct answers.
-Servlet and JSP Integration: The application uses Servlets for backend logic and JSP for front-end pages.
-Technologies Used
-Java: Core language for application development.
-Servlets and JSP: For handling requests and rendering pages.
-MySQL: For storing user data, quiz questions, and scores.
-HTML/CSS: For styling the application.
-Apache Tomcat: Server for deploying the application.
-Project Structure
+==>**User Registration and Login**: Users can register and log in to access quizzes.
+
+==>**Quiz Management**: Users can take quizzes and submit answers.
+
+==>**Score Calculation**: The application calculates the score based on correct answers.
+
+==>**Servlet and JSP Integration**: The application uses Servlets for backend logic and JSP for front-end pages.
+
+
+==>**Technologies Used**:
+*Java*: Core language for application development.
+*Servlets and JSP*: For handling requests and rendering pages.
+*MySQL*: For storing user data, quiz questions, and scores.
+*HTML/CSS*: For styling the application.
+*Apache Tomcat*: Server for deploying the application.
+
+==>**Project Structure**:
 bash
 Copy code
 QuizApplication/
@@ -39,17 +48,18 @@ QuizApplication/
 └── .classpath                 # Classpath configuration for servlet-api.jar
 └── .project                   # Project configuration for Java in VS Code
 Installation and Setup
-Prerequisites
-Java JDK 21: Ensure Java is installed and the JAVA_HOME environment variable is set.
-Apache Tomcat: Download and install Tomcat, and set it up in your IDE (e.g., VS Code).
-MySQL Database: Make sure MySQL is installed and running.
-Database Setup
+
+**Prerequisites**:
+*Java JDK 21*: Ensure Java is installed and the JAVA_HOME environment variable is set.
+*Apache Tomcat*: Download and install Tomcat, and set it up in your IDE (e.g., VS Code).
+*MySQL Database*: Make sure MySQL is installed and running.
+
+**Database Setup**:
 Open MySQL and create a new database named quiz_app.
 
-Run the following SQL commands to create the necessary tables:
+**Run the following SQL commands to create the necessary tables**:
+*SQL*
 
-sql
-Copy code
 CREATE DATABASE quiz_app;
 USE quiz_app;
 
@@ -76,7 +86,6 @@ Place the servlet-api.jar in the lib/ directory.
 Open the project in your IDE (e.g., VS Code).
 Update the database connection details in UserDao.java (inside src/com/quizapp/dao):
 java
-Copy code
 Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/quiz_app", "subramanyamavanapu", "yaswanth@2006");
 Build and deploy the project on your Apache Tomcat server.
 Usage
@@ -87,15 +96,18 @@ Submit the quiz: Once submitted, users receive their score.
 Database Schema
 The application uses a simple database schema with two main tables:
 
-users: Stores user information (username, password).
-questions: Stores quiz questions and answer options.
-Example of questions table structure:
-id	question_text	option_a	option_b	option_c	option_d	correct_answer
-1	What is the capital of USA?	New York	Washington	Los Angeles	Chicago	B
-Future Improvements
-Admin Panel: Allow admin users to add/update/delete quiz questions.
-User Profiles: Enhance user profiles to track quiz history and performance.
-Category-Based Quizzes: Add quizzes based on categories (e.g., Science, History).
-Timer Functionality: Add a timer for each quiz attempt.
-License
+*users*: Stores user information (username, password).
+*questions*: Stores quiz questions and answer options.
+
+**Example of questions table structure**:
+
+*id	question_text	option_a	option_b	option_c	option_d	correct_answer
+1	What is the capital of USA?	New York	Washington	Los Angeles	Chicago	B*
+
+**Future Improvements**
+*Admin Panel*: Allow admin users to add/update/delete quiz questions.
+*User Profile*s: Enhance user profiles to track quiz history and performance.
+*Category-Based Quizzes*: Add quizzes based on categories (e.g., Science, History).
+*Timer Functionality*: Add a timer for each quiz attempt.
+**License**
 This project is licensed under the MIT License. See the LICENSE file for more details.
