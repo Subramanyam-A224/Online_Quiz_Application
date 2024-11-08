@@ -1,4 +1,4 @@
-==>***Quiz Application***:
+# Quiz Application:
 
 This is a simple Quiz Application developed in Java using Servlets, JSP, and MySQL as the backend database. The application allows users to register, log in, take quizzes, and view their scores.
 
